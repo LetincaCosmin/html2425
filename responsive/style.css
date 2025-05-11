@@ -1,0 +1,112 @@
+body{
+ font-family: 'Times New Roman', Times, serif;
+ width: 200vh;
+ height: 100%;
+ background-color: #f5f5dc;
+ 
+
+}
+
+
+#header{
+flex-basis: 90%;
+height: 50px;
+padding: 5px;
+margin: 2px;
+text-align: left;
+padding-bottom: 20px;
+padding-top: 20px;
+
+
+
+}
+
+#flexbox1{  
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+    height: 760px;
+    width:90%;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    align-content: center;
+    position: absolute;
+     transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+
+}
+
+#flexbox1 > div {
+width: 250px;
+height: 250px;
+margin: 2px;
+background-image: url(img/bg.png);
+background-position: center;
+background-color: cornflowerblue;
+background-size: 90%;
+border-radius: 10%;
+margin: 3px;
+justify-content: space-between;
+color:aliceblue;
+
+
+}
+ 
+
+#flexbox1 > div:nth-child(12) {
+background:none;
+align-self: flex-start;
+overflow: visible;
+flex-basis: 100%;
+margin: 10px;
+color:black;
+}
+
+p{
+padding: 10px;
+margin-left: 10px;
+margin-right: 10px;
+text-align: left;
+
+
+}
+
+@media screen and (max-width: 1024px) {
+.box {
+width: 33.33%;
+}
+}
+ 
+@media screen and (max-width: 768px) {
+.box {
+width: 50%;
+}
+}
+ 
+@media screen and (max-width: 414px) {
+.box {
+width: 100%;
+}
+}
+
+@media screen and (max-height:1024px) {
+.box {
+height: 33.33%;
+}
+}
+
+
+@media screen and (max-height: 768px) {
+.box {
+height: 50%;
+}
+}
+ 
+@media screen and (max-height: 414px) {
+.box {
+height: 100%;
+}
+}
